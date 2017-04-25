@@ -27,7 +27,7 @@ var UnitSettings = {
         animationSpeed: 10,
         velocity: 100, // 100
         hp: 10,
-        price: 45,
+        price: 30,
         offensive: true,
         attackForce: 10,
         animations: {},

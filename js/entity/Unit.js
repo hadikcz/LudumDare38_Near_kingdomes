@@ -79,13 +79,13 @@ Unit.prototype.processHitCastle = function(me, castle){
     if(castle.team == 'red' && this.typeSettings.defaultSprite == 'workerWalk' && this.state == 'carry'){
         var range = [];
         if(difficulty == 'easy'){
-            range = [2, 5];
+            range = [1, 3];
         } else if(difficulty == 'normal'){
-            range = [5, 8];
+            range = [3, 6];
         } if(difficulty == 'hard'){
-            range = [5, 15];
+            range = [6, 10];
         }else if(difficulty == 'cheater'){
-            range = [5, 20];
+            range = [10, 15];
         }
         ai.unitManager.addGold(this.game.rnd.integerInRange(range[0], range[1]));
     }

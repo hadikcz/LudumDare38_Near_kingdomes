@@ -22,13 +22,13 @@ var UnitManager = function(game, team, startGold){
             range = [2, 5];
         } else if(this.team == 'red'){
             if(difficulty == 'easy'){
-                range = [1, 3];
+                range = [1, 1];
             } else if(difficulty == 'normal'){
-                range = [2, 3];
+                range = [1, 2];
             } if(difficulty == 'hard'){
-                range = [2, 8];
+                range = [2, 4];
             }else if(difficulty == 'cheater'){
-                range = [5, 9];
+                range = [4, 8];
             }
         }
         this.addGold(this.game.rnd.integerInRange(range[0], range[1]));
